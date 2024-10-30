@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="28dp"
+    app:cardBackgroundColor="@color/gray_200"
+    app:cardElevation="0dp"
+    >
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="3dp"
+        android:background="@drawable/line_327"
+        android:layout_marginVertical="8dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_contact"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="@dimen/textSize_16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_contact_sub"
+        android:textColor="@color/gray_800"
+        android:fontFamily="@font/inter_r"
+        android:textSize="@dimen/textSize_14sp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_id"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="@dimen/textSize_16sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/contactEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_andersona_id"
+        android:background="@drawable/custom_input1"
+        android:padding="10dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/scanner"
+        app:iconTint="@color/black"
+        app:iconGravity="start"
+        android:text="@string/scan_id"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="@dimen/textSize_14sp"
+        android:backgroundTint="@color/blue_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:cornerRadius="12dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:elevation="0dp"
+        app:elevation="0dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+
+
+    <TextView
+        android:id="@+id/cancelBtnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="@dimen/textSize_14sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/addContactBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_contact"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="@dimen/textSize_14sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom style for active text appearance -->
+    <style name="BottomNavigationViewActiveText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">14sp</item> <!-- Set your desired text size -->
+        <item name="android:fontFamily">@font/inter_medium</item> <!-- Set your desired font family -->
+    </style>
+
+    <!-- Custom style for inactive text appearance -->
+    <style name="BottomNavigationViewInactiveText" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">14sp</item> <!-- Set your desired text size -->
+        <item name="android:fontFamily">@font/inter_medium</item> <!-- Set your desired font family -->
+    </style>
+
+</resources>

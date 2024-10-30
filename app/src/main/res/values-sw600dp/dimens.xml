@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="textSize_20sp">32sp</dimen>
+    <dimen name="textSize_18sp">30sp</dimen>
+    <dimen name="textSize_16sp">28sp</dimen>
+    <dimen name="textSize_14sp">26sp</dimen>
+    <dimen name="textSize_13sp">25sp</dimen>
+    <dimen name="textSize_12sp">24sp</dimen>
+    <dimen name="_8sp">9sp</dimen>
+    <dimen name="_22sp">24sp</dimen>
+</resources>

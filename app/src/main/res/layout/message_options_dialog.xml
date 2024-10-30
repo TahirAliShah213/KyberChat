@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/gray_200">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/transparent">
+
+
+
+    <!-- Option 1: Unread -->
+    <LinearLayout
+        android:id="@+id/option_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/unread"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/unread"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Option 2: Pin -->
+    <LinearLayout
+        android:id="@+id/option_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/pin"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/pin"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Option 3: Mute -->
+    <LinearLayout
+        android:id="@+id/option_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/mute"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/mute"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"
+            app:tint="@color/black"/>
+    </LinearLayout>
+
+    <!-- Option 4: Select -->
+    <LinearLayout
+        android:id="@+id/option_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/select_ic"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/select"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Option 5: Archive -->
+    <LinearLayout
+        android:id="@+id/option_archive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/archive"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/archive"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Option 6: Delete -->
+    <LinearLayout
+        android:id="@+id/option_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/delete"
+            app:tint="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/delete"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

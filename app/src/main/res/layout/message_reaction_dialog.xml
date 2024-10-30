@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:cardBackgroundColor="@color/gray_200"
+    android:gravity="center"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="10dp"
+    android:background="@android:color/transparent"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:background="@drawable/line_327"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/dialog_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/message_content_here"
+        android:textSize="@dimen/textSize_16sp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="end"
+        android:background="@drawable/send_text_bg"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/dialog_message_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/react"
+            android:textSize="@dimen/textSize_16sp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="end"
+            android:gravity="center_horizontal|center_vertical"
+
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+    <!-- Reactions Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="10dp">
+
+        <!-- Reaction Emojis -->
+        <TextView
+            android:id="@+id/reaction_like"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="👍"
+            android:textSize="30sp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/reaction_love"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="❤️"
+            android:textSize="30sp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/reaction_laugh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="😂"
+            android:textSize="30sp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/reaction_surprised"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="😮"
+            android:textSize="30sp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/reaction_sad"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="😢"
+            android:textSize="30sp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/reaction_angry"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="😡"
+            android:textSize="30sp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Action Items -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Copy -->
+        <LinearLayout
+            android:id="@+id/action_copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/copy"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tabler_copy"
+                app:tint="@color/black"/>
+        </LinearLayout>
+
+        <!-- Reply -->
+        <LinearLayout
+            android:id="@+id/action_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reply"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quill_reply"
+                app:tint="@color/black"/>
+        </LinearLayout>
+
+        <!-- Forward -->
+        <LinearLayout
+            android:id="@+id/action_forward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/forward"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quill_forward"
+                app:tint="@color/black"/>
+        </LinearLayout>
+
+        <!-- Delete -->
+        <LinearLayout
+            android:id="@+id/action_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mdi_delete" />
+        </LinearLayout>
+
+        <!-- Info -->
+        <LinearLayout
+            android:id="@+id/action_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                app:tint="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

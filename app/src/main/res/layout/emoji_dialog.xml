@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="28dp"
+    app:cardBackgroundColor="@color/gray_200"
+    app:cardElevation="0dp"
+    >
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="3dp"
+        android:background="@drawable/line_327"
+        android:layout_marginVertical="8dp"
+        android:layout_gravity="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        android:gravity="end"
+        app:cardBackgroundColor="@color/gray_100"
+        app:cardCornerRadius="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp">
+
+
+            <!-- EditText for Message Input -->
+            <EditText
+                android:id="@+id/messageEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@id/searchBtn"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/inter_medium"
+                android:hint="@string/search"
+                android:textSize="16sp" />
+
+
+            <!-- Plus Button -->
+            <ImageView
+                android:id="@+id/searchBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/search"
+                app:tint="@color/black"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!-- Top section for Recent Emojis -->
+    <TextView
+        android:id="@+id/tv_recent_emojis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recent_emojis"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <!-- Horizontal RecyclerView for Recent Emojis -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_recent_emojis"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginVertical="8dp" />
+
+    <!-- Text for selected category (All, Smileys, etc.) -->
+    <TextView
+        android:id="@+id/tv_selected_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emojis"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!-- GridView for displaying all emojis -->
+    <GridView
+        android:id="@+id/grid_emojis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="6"
+        android:layout_marginTop="2dp" />
+
+    <!-- Bottom icon bar for emoji categories -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Add ImageButtons or Icons for each category -->
+            <ImageButton
+                android:id="@+id/btn_smileys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/face_happy_10"
+                android:background="@color/zxing_transparent"
+                android:contentDescription="Smileys"
+                android:layout_marginStart="10dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_animals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/animal_icon"
+                android:background="@color/zxing_transparent"
+                android:contentDescription="Animals"
+                android:layout_marginStart="10dp" />
+
+            <!-- Add more buttons for other categories like Travel, Food, etc. -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

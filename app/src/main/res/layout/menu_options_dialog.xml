@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/gray_200">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/transparent">
+
+
+
+        <TextView
+            android:id="@+id/allMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/all_media"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/search"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/chatSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/chat_settings"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+
+
+
+        <TextView
+            android:id="@+id/deleteChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/delete_chat"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+
+
+
+        <TextView
+            android:id="@+id/disMesg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/disappearing_messages"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/block"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mute_notifications"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

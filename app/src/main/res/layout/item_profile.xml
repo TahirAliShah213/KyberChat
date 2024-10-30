@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/settingIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/profile"
+        app:tint="@color/black"/> <!-- Placeholder icon -->
+
+    <TextView
+        android:id="@+id/settingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_detail"
+        android:paddingStart="16dp"
+        android:textSize="@dimen/textSize_16sp"
+        android:textColor="@color/black"/>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/gray_200">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/transparent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mute_notifications"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/mute1hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mute_for_1_hour"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/mute8hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mute_for_8_hour"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/black"/>
+
+
+
+        <TextView
+            android:id="@+id/mute1day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mute_for_1_day"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/black"/>
+
+
+
+        <TextView
+            android:id="@+id/mute7day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mute_for_7_days"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/muteAlways"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/always"
+            android:textSize="@dimen/textSize_16sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

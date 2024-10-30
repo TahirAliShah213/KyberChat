@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.tahirdev.kyberchat.ui.Chat.chat_main.ChatFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_chat">
+
+        <action
+            android:id="@+id/action_chatFragment_to_new_messageFragment"
+            app:destination="@id/new_messageFragment" />
+
+        <action
+            android:id="@+id/action_chatFragment_to_messageRequest"
+            app:destination="@id/messageRequest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.tahirdev.kyberchat.ui.Contacts.ContactsFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_contacts" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.tahirdev.kyberchat.ui.profiles.ProfilesFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_navigation_notifications_to_account_detailsFragment"
+            app:destination="@id/account_detailsFragment" />
+
+        <action
+            android:id="@+id/action_navigation_notifications_to_inviteFriendFragment"
+            app:destination="@id/inviteFriendFragment" />
+
+        <action
+            android:id="@+id/action_navigation_notifications_to_appearanceFrag"
+            app:destination="@id/appearanceFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/account_detailsFragment"
+        android:name="com.tahirdev.kyberchat.ui.profiles.AccountDetailsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_account_details">
+
+        <action
+            android:id="@+id/action_account_detailsFragment_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/inviteFriendFragment"
+        android:name="com.tahirdev.kyberchat.ui.profiles.InviteFragment"
+        android:label="Invite Friend Fragment"
+        tools:layout="@layout/fragment_invite">
+
+        <action
+            android:id="@+id/action_inviteFriendFragment_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/new_messageFragment"
+        android:name="com.tahirdev.kyberchat.ui.Chat.messages.NewMessagesFragment"
+        android:label="New Message Fragment"
+        tools:layout="@layout/fragment_new_messages">
+
+        <action
+            android:id="@+id/action_new_messageFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+
+        <action
+            android:id="@+id/action_new_messageFragment_to_chatFragment"
+            app:destination="@id/navigation_home" />
+
+        <action
+            android:id="@+id/action_new_messageFragment_to_createGroupFragment"
+            app:destination="@id/create_group" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/create_group"
+        android:name="com.tahirdev.kyberchat.ui.Chat.messages.createGroup.CreateGroupFragment"
+        android:label="Create Group"
+        tools:layout="@layout/fragment_create_group">
+
+        <action
+            android:id="@+id/action_createGroupFragment_to_new_messageFragment"
+            app:destination="@id/new_messageFragment" />
+
+        <action
+            android:id="@+id/action_create_group_to__createGroupFragment1"
+            app:destination="@id/create_group1" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/create_group1"
+        android:name="com.tahirdev.kyberchat.ui.Chat.messages.createGroup.CreateGroup1Fragment"
+        android:label="Create Group 1"
+        tools:layout="@layout/fragment_create_group1">
+
+        <action
+            android:id="@+id/action_createGroupFragment1_to_create_group"
+            app:destination="@id/create_group" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.tahirdev.kyberchat.ui.Chat.messages.MessageFragment"
+        android:label="Message Fragment"
+        tools:layout="@layout/fragment_message">
+
+        <action
+            android:id="@+id/action_messageFragment_to_new_messageFragment"
+            app:destination="@id/new_messageFragment" />
+        <action
+            android:id="@+id/action_messageFragment_to_disappearingMsg"
+            app:destination="@id/disappearingMsg" />
+
+        <action
+            android:id="@+id/action_messageFragment_to_chatSettingFragment"
+            app:destination="@id/chatSettingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageRequest"
+        android:name="com.tahirdev.kyberchat.ui.Chat.messages.MessageRequest"
+        android:label="Message Fragment"
+        tools:layout="@layout/fragment_message_request">
+
+        <action
+            android:id="@+id/action_messageRequest_to_chatFragment"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/disappearingMsg"
+        android:name="com.tahirdev.kyberchat.ui.Chat.messages.allmedias.DisMsgFragment"
+        android:label="Message Fragment"
+        tools:layout="@layout/fragment_dis_msg">
+
+        <action
+            android:id="@+id/action_disappearingMsg_to_messageFragment"
+            app:destination="@id/messageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatSettingFragment"
+        android:name="com.tahirdev.kyberchat.ui.Chat.messages.allmedias.ChatSettingsFragment"
+        android:label="Chat Setting Fragment"
+        tools:layout="@layout/fragment_chat_settings">
+
+        <action
+            android:id="@+id/action_chatSettingMsg_to_messageFragment"
+            app:destination="@id/messageFragment" />
+
+        <action
+            android:id="@+id/action_chatSettingMsg_to_nicknameFrag"
+            app:destination="@id/nicknameFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nicknameFragment"
+        android:name="com.tahirdev.kyberchat.ui.Chat.messages.chatSettings.NicknameFragment"
+        android:label="Nickname Fragment"
+        tools:layout="@layout/fragment_nickname">
+
+        <action
+            android:id="@+id/action_nicknameFrag_to_chatSettingMsg"
+            app:destination="@id/chatSettingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/appearanceFragment"
+        android:name="com.tahirdev.kyberchat.ui.Chat.messages.chatSettings.AppearnceFragment"
+        android:label="Appearance Fragment"
+        tools:layout="@layout/fragment_appearnce">
+
+        <action
+            android:id="@+id/action_appearance_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+
+
+
+
+
+
+</navigation>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/gray_200"
+    android:gravity="center"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="10dp"
+    android:background="@android:color/transparent"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+
+
+    <TextView
+        android:id="@+id/dialog_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_s_m"
+        android:textSize="@dimen/textSize_16sp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="start"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/dialog_deleteforeveryone_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_for_everyone"
+            android:textSize="@dimen/textSize_14sp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="end"
+            android:gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/teal"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/dialog_deleteforme_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_for_me"
+            android:textSize="@dimen/textSize_14sp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="end"
+            android:gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/teal"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/dialog_delete_message_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="@dimen/textSize_14sp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="end"
+            android:gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/teal"
+            android:layout_marginTop="5dp"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

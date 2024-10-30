@@ -1,0 +1,8 @@
+<!-- res/drawable/tab_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state (Blue line) -->
+    <item android:state_selected="true"
+        android:drawable="@drawable/line_blue" />
+    <!-- Unselected state (Gray dot) -->
+    <item android:drawable="@drawable/circle_gray" />
+</selector>
